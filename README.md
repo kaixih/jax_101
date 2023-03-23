@@ -23,3 +23,8 @@ python xmap_dot_psum.py --mode 3 --show_ir
 python xmap_dot.py --mode 3 --show_ir
 ```
 
+## `xmap` to compute amax
+
+```bash
+python xmap_amax.py
+```
