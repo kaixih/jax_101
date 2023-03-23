@@ -30,6 +30,6 @@ def dot_wrapper(x, w, debug_on):
 x = jax.random.normal(jax.random.PRNGKey(0), (8192, 8192))
 x = jax.device_put(x, sharding)
 w1 = jax.random.normal(jax.random.PRNGKey(0), (8192, 8192))
-w1 = jax.device_put(w1, sharding)
+w1 = jax.device_put(w1, sharding.T)
 y = dot_wrapper(x, w1, debug_on=True)
 
